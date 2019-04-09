@@ -1,0 +1,145 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #DDDDDD;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100vw;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.logo img {
+    max-height: 90px;
+    display: flex;
+    margin: 5px;
+}
+
+nav {
+    font-weight: 400;
+}
+
+nav ul {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 100px;
+    margin-top: 135px;
+}
+  
+#hero h2 {
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+
+#hero input[type="email"] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+}
+
+#hero input[type="submit"] {
+    width: 160px;
+    height: 30px;
+    margin: 15px;
+    border: 1px solid black;
+    background-color: #FF4136;
+}
+
+#hero input[type="submit"]:hover {
+    background-color: white;
+    transition: background-color .5s;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+}
+
+.desc {
+    width: 50vw;
+}
+
+#how-to-play {
+    margin: 50px;
+    text-align: center;
+}
+
+#how-to-play iframe {
+    margin-top: 10px;
+    max-width: 700px;
+    width: 100%;
+}
+
+#founders {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+#matt, #jeremy {
+    max-width: 300px;
+    width: 100%;
+    margin: 10px auto;
+}
+
+footer {
+    background-color: white;
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul li {
+    padding-left: 10px;
+}
+  
+span {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+}
