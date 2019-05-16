@@ -98,6 +98,7 @@ nav ul {
 
 .desc {
     width: 50vw;
+    margin: 10px;
 }
 
 #how-to-play {
@@ -142,4 +143,11 @@ span {
     display: flex;
     justify-content: flex-end;
     font-size: 0.9em;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 550px) {
+    .desc {
+        width: 100%;
+    }
 }

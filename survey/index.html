@@ -1,95 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <title>Survey: Spikeball</title>
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="style.css">
     </head>
-
-    <div id="title">
-        <h1>Spikeball Tournament Form</h1>
-    </div>
-
+    <h1 id="title">Spikeball Tournament Form</h1>
     <div class="outer">
-        <div id="description">
-            <p>Register for Rensselaer Roundnet's March 27th (GM Day) Spikeball Tournament.  Cost to enter is $15, with proceeds going to charity.  First place wins a brand new Spikeball Set.</p>
-        </div>
+        <p id="description">Register for Rensselaer Roundnet's March 27th (GM Day) Spikeball Tournament.  Cost to enter is $15, with proceeds going to charity.  First place wins a brand new Spikeball Set.</p>
         <form id="survey-form">
-            <div class = "rowTab">
-                <div class = "labels">
-                    <label id="name-label" for="name">Name:</label>
-                </div>
-                <div class="rightTab">
-                    <input autofocus id="name" type="text" name="name" placeholder="Enter your name" class="input-field" required>
-                </div>
+            <div class="labels">
+                <label id="name-label" for="name">Name:</label>
             </div>
-            <div class = "rowTab">
-                <div class = "labels">
-                    <label id="email-label" for="email">Email:</label>
-                </div>
-                <div class="rightTab">
-                    <input id="email" type="text" name="email" placeholder="Enter your email" class="input-field" required>
-                </div>
+            <div class="entries">
+                <input autofocus id="name" type="text" name="name" placeholder="Enter your name" class="input-field" required>
             </div>
-            <div class = "rowTab">
-                <div class = "labels">
-                    <label id="number-label" for="cost">What is the cost of the tournament?</label>
-                </div>
-                <div class="rightTab">
-                    <input id="number" type="number" name="cost" min="15" max="15" placeholder="Cost in dollars" class="input-field">
-                </div>
+            <div class = "labels">
+                <label id="email-label" for="email">Email:</label>
             </div>
-            <div class = "rowTab">
-                <div class = "labels">
-                    <label for="ability">What is your skill level?</label>
-                </div>
-                <div class="rightTab">
-                    <select id="dropdown" name="ability" class="dropdown">
-                        <option disabled value>Select an option</option>
-                        <option value="beginner">Beginner</option>
-                        <option value="intermediate">Intermediate</option>
-                        <option value="advanced">Advanced</option>
-                    </select>
-                </div>
+            <div class="entries">
+                <input id="email" type="email" name="email" placeholder="Enter your email" class="input-field" required>
             </div>
-            <div class="rowTab">
-                <div class = "labels">
-                    <label for="numTourn">How many tournaments have you played in before?</label>
-                </div>
-                <div class="rightTab">
-                    <ul style="list-style: none;">
-                        <li class="radio"><label>0<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
-                        <li class="radio"><label>1<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
-                        <li class="radio"><label>2+<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
-                    </ul>
-                </div>
+            <div class = "labels">
+                <label id="number-label" for="number">What is the cost of the tournament?</label>
             </div>
-            <div class="rowTab">
-                <div class="labels">
-                    <label for="participate">Things you would participate in<br>(Check all that apply): </label>
-                </div>
-                <div class="rightTab">
-                    <ul id="participate" style="list-style: none;">
-                        <li class="checkbox"><label><input name="participate" value="1" type="checkbox" class="userRatings">Tournaments at RPI</label></li>
-                        <li class="checkbox"><input name="participate" value="2" type="checkbox" class="userRatings">Tournaments around the region</li>
-                        <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Weekly Practices</label></li>
-                        <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Occasional Practices</label></li>
-                        <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Outdoor Practices</label></li>
-                        <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Indoor Practices</label></li>
-                    </ul>
-                </div>
+            <div class="entries">
+                <input id="number" type="number" name="cost" min="15" max="15" placeholder="Cost in dollars" class="input-field">
             </div>
-            <div class="rowTab">
-                <div class="labels">
-                    <label for="comments">Any Comments or Questions?</label>
-                </div>
-                <div class="rightTab">
-                    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
-                </div>
+            <div class = "labels">
+                <label for="dropdown">What is your skill level?</label>
+            </div>
+            <div class="entries">
+                <select id="dropdown" name="ability" class="dropdown">
+                    <option disabled value>Select an option</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+            <div class = "labels">
+                <label for="numTourn">Number of tournaments played</label>
+            </div>
+            <div class="entries">
+                <ul id="numTourn" style=" list-style: none;">
+                    <li class="radio"><label>0<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label>1<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label>2+<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+                </ul>
+            </div>
+            <div class="labels">
+                <label for="participate">Things you would participate in<br>(Check all that apply): </label>
+            </div>
+            <div class="entries">
+                <ul id="participate" style="list-style: none;">
+                    <li class="checkbox"><label><input name="participate" value="1" type="checkbox" class="userRatings">Tournaments at RPI</label></li>
+                    <li class="checkbox"><input name="participate" value="2" type="checkbox" class="userRatings">Tournaments around the region</li>
+                    <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Weekly Practices</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Occasional Practices</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Outdoor Practices</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Indoor Practices</label></li>
+                </ul>
+            </div>
+            <div class="labels">
+                <label for="comments">Any Comments or Questions?</label>
+            </div>
+            <div class="entries">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
             </div>
             <button id="submit" type="submit">Submit</button>
         </form>
     </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </html>
