@@ -33,7 +33,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #DDDDDD;
+  background-color: white;
 }
 
 .logo img {
