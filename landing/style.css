@@ -87,6 +87,7 @@ nav ul {
 
 #image {
     max-width: 350px;
+    display: flex;
 }
 
 .desc {
@@ -137,4 +138,10 @@ span {
     justify-content: flex-end;
     font-size: 0.9em;
     margin-top: 5px;
+}
+
+@media only screen and (max-width: 550px) {
+    .desc {
+        width: 100%;
+    }
 }
