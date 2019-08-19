@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #DDDDDD;
+    background-color: white;
 }
 
 * {
@@ -33,7 +33,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: #DDDDDD;
 }
 
 .logo img {
@@ -120,7 +120,7 @@ nav ul {
 }
 
 footer {
-    background-color: white;
+    background-color: #DDDDDD;
     padding: 20px;
 }
 
