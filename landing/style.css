@@ -138,9 +138,3 @@ span {
     font-size: 0.9em;
     margin-top: 5px;
 }
-
-@media only screen and (max-width: 550px) {
-    .desc {
-        width: 100%;
-    }
-}
